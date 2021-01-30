@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js array</title>
+    <button onclick="sor()">click to sort</button>
+    <h2 id="demo"></h2>
+</head>
+<body>
+    <script>
+        const v=[1,2,3,4,5,6,7];
+        console.log(v);
+        const d=["safal","c","c++","python","javascript"];
+        console.log(new String(d));
+        const a=[5,4,3,2,1]
+        a.sort();
+        console.log(a);
+        const e=(1,2,3,4,5,6);
+        console.log(e);
+        // indexing
+        let o=v[2];
+        let r=v[0];
+        console.log(o,r);
+        const ee=[1,2,3,4,5,6,7]
+        ee[0]=12;
+        console.log(ee);
+        let x=Array()
+        x[0]=12;
+        x[1]=13;
+        console.log(x);
+
+        // using functional library
+
+        let cc=[];
+        cc.push(12);
+        cc.push(13);
+        cc.pop()
+        console.log(cc);
+        //shift will delete first element
+        let qq=[1,2,3,4,5];
+        qq.shift();
+    //    unshift add to first
+        qq.unshift(12);
+        console.log(qq);
+        const xx=[5,4,3,6,9,8,2,1];
+        document.getElementById("demo").innerHTML=xx;
+        console.log(xx.reverse());
+        function sor(){
+            const xx=[5,4,3,6,9,8,2,1];
+            xx.sort();
+            document.getElementById("demo").innerHTML=xx;
+            
+        }
+
+    </script>
+</body>
+</html>
